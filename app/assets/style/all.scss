@@ -235,7 +235,7 @@ body{
 // }
 .classicProduct {
   display: flex;
-  // justify-content: space-between;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 2rem;
   &__img {
@@ -252,6 +252,7 @@ body{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-style: italic;
+    text-transform:uppercase;
     line-height: 4.5rem;
     color: $red;
     margin-left: 2rem;
@@ -262,10 +263,10 @@ body{
     color: $red;
     margin-right: 0.5rem;
   }
-  &:nth-child(2n) {
-    flex-direction: row-reverse;
-    text-align: right;
-  }
+  // &:nth-child(2n) {
+  //   flex-direction: row-reverse;
+  //   justify-content: flex-end;
+  // }
 }
 .crossoverProduct {
   height: 705px;
@@ -381,7 +382,6 @@ body{
   padding-bottom: 2.4375em;
   &__nav {
     padding: 0.75em 1.5rem 0.75em 1.5rem;
-    // margin-right: 3rem;
   }
   &__socialIcon {
     font-size: 48px;
@@ -399,4 +399,3 @@ body{
     margin-right: 0.8rem;
   }
 }
-
