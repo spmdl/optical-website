@@ -55,7 +55,7 @@ img {
           box-sizing: border-box; }
 
 .container {
-  max-width: 1110px;
+  max-width: 1140px;
   height: 100%;
   margin: 0 auto;
   padding: 0 15px; }
@@ -478,6 +478,12 @@ body {
 .text-muted {
   color: #6c757d; }
 
+.lh-m {
+  line-height: 54px; }
+
+.lh-l {
+  line-height: 72px; }
+
 .bg-red {
   background: #AA0601; }
 
@@ -606,7 +612,7 @@ body {
     white-space: nowrap; }
 
 .card {
-  max-width: 255px; }
+  max-width: 22.98%; }
   .card__body {
     padding: 1rem;
     height: 204px;
@@ -616,7 +622,7 @@ body {
     -webkit-box-shadow: 0px 2px 6px #00000029;
             box-shadow: 0px 2px 6px #00000029; }
   .card__img {
-    height: 256px;
+    max-height: 256px;
     border-radius: .25rem .25rem 0 0;
     -o-object-fit: cover;
        object-fit: cover;
