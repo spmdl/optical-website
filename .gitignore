@@ -4,4 +4,4 @@ node_modules
 dist
 .vscode
 .DS_Store
-.design_drawing*
+design_drawing*

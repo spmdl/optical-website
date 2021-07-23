@@ -1,0 +1,105 @@
+// Color system
+$white:       #ffffff;
+$pink:        #FBF2F2;
+$red:         #AA0601;
+$black:       #000000;
+$dark:        #111619;
+$brown:       #650300;
+$gray:        #707070;
+
+$colors: (
+  "pink":   $pink,
+  "red":    $red,
+  "dark":   $dark,
+  "brown":  $brown,
+  "white":  $white,
+  "black":  $black,
+  "gray":   $gray,
+);
+
+$primary:   $red;
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  "primary":    $primary
+  // "secondary":  $secondary,
+  // "info":       $info,
+  // "warning":    $warning,
+  // "light":      $light,
+  // "dark":       $dark
+);
+
+// Spacing
+// scss-docs-start spacer-variables-maps
+$spacers: (
+  "0": 0,
+  "1": 0.5rem,   // 8
+  "2": 1rem,     // 16
+  "3": 1.5rem,   // 24
+  "4": 1.875rem, // 30
+  "5": 2rem,     // 32
+  "6": 2.5rem,   // 40
+  "7": 3rem,     // 48
+  "8": 3.75rem,  // 60
+  "9": 5rem,     // 80
+);
+
+// Body
+
+// Links
+// $link-color:        $primary !default;
+// $link-decoration:   none;
+
+// Grid breakpoints
+// scss-docs-start grid-breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
+
+// Grid containers
+// $container-max-widths: (
+//   sm: 540px,
+//   md: 720px,
+//   lg: 960px,
+//   xl: 1140px,
+//   xxl: 1320px
+// ) !default;
+
+// Typography
+// Prefix for :root CSS variables
+$variable-prefix:             bs- !default;
+
+// Gradient
+$gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
+
+$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+// Font, line-height, and color for body text, headings, and more.
+$font-family-noto-sans: "Noto Sans TC", sans-serif;
+$font-family-roboto:    'Roboto', sans-serif;
+
+$font-weight-light:     300;
+$font-weight-normal:    400;
+$font-weight-bold:      700;
+$font-weight-bolder:    900;
+
+$line-height-m:        3.375rem;   //54
+$line-height-l:        4.5rem;     //72
+
+$font-sizes: (
+  "1": .875rem,  // 14
+  "2": 1.25rem,  // 20
+  "3": 1.5rem,   // 24
+  "4": 2.25rem,  // 36
+  "5": 3rem,     // 48
+);
+
+// Typography
+// Font, line-height, and color for body text, headings, and more.
+$small-font-size:           .875em !default;
+$text-muted:                $gray !default;

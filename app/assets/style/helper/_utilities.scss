@@ -1,0 +1,185 @@
+$utilities: (
+  "display": (
+    responsive: true,
+    print: true,
+    property: display,
+    class: d,
+    values: inline inline-block block grid table table-row table-cell flex inline-flex none
+  ),
+  // Flex utilities
+  "flex-direction": (
+    responsive: true,
+    property: flex-direction,
+    class: flex,
+    values: row column row-reverse column-reverse
+  ),
+  "flex-grow": (
+    responsive: true,
+    property: flex-grow,
+    class: flex,
+    values: (
+      grow-0: 0,
+      grow-1: 1,
+    )
+  ),
+  "flex-wrap": (
+    responsive: true,
+    property: flex-wrap,
+    class: flex,
+    values: wrap nowrap wrap-reverse
+  ),
+  "justify-content": (
+    responsive: true,
+    property: justify-content,
+    values: (
+      start: flex-start,
+      end: flex-end,
+      center: center,
+      between: space-between,
+      around: space-around,
+      evenly: space-evenly,
+    )
+  ),
+  "align-items": (
+    responsive: true,
+    property: align-items,
+    values: (
+      start: flex-start,
+      end: flex-end,
+      center: center,
+      baseline: baseline,
+      stretch: stretch,
+    )
+  ),
+  "align-content": (
+    responsive: true,
+    property: align-content,
+    values: (
+      start: flex-start,
+      end: flex-end,
+      center: center,
+      between: space-between,
+      around: space-around,
+      stretch: stretch,
+    )
+  ),
+  // Margin utilities
+  "margin": (
+    responsive: true,
+    property: margin,
+    class: m,
+    values: map-merge($spacers, (auto: auto))
+  ),
+  "margin-top": (
+    responsive: true,
+    property: margin-top,
+    class: mt,
+    values: map-merge($spacers, (auto: auto))
+  ),
+  "margin-bottom": (
+    responsive: true,
+    property: margin-bottom,
+    class: mb,
+    values: map-merge($spacers, (auto: auto))
+  ),
+  // Padding utilities
+  "padding": (
+    responsive: true,
+    property: padding,
+    class: p,
+    values: $spacers
+  ),
+  "padding-x": (
+    responsive: true,
+    property: padding-right padding-left,
+    class: px,
+    values: $spacers
+  ),
+  "padding-y": (
+    responsive: true,
+    property: padding-top padding-bottom,
+    class: py,
+    values: $spacers
+  ),
+  "padding-top": (
+    responsive: true,
+    property: padding-top,
+    class: pt,
+    values: $spacers
+  ),
+  "padding-bottom": (
+    responsive: true,
+    property: padding-bottom,
+    class: pb,
+    values: $spacers
+  ),
+  "font-family": (
+    property: font-family,
+    class: font,
+    values: (
+      roboto: $font-family-roboto,
+    )
+  ),
+  "font-size": (
+    // rfs: true,
+    property: font-size,
+    class: fs,
+    values: $font-sizes
+  ),
+  "font-style": (
+    property: font-style,
+    class: fst,
+    values: italic normal
+  ),
+  "font-weight": (
+    property: font-weight,
+    class: fw,
+    values: (
+      light: $font-weight-light,
+      normal: $font-weight-normal,
+      bold: $font-weight-bold,
+      bolder: $font-weight-bolder
+    )
+  ),
+  "line-height": (
+    property: line-height,
+    class: lh,
+    values: (
+      1: 1,
+      // sm: $line-height-sm,
+      m: $line-height-m,
+      l: $line-height-l,
+    )
+  ),
+  "text-align": (
+    responsive: true,
+    property: text-align,
+    class: text,
+    values: (
+      start: left,
+      end: right,
+      center: center,
+    )
+  ),
+  "color": (
+    property: color,
+    class: text,
+    values: map-merge(map-merge(
+        $theme-colors,
+        $colors,
+      ),(    
+        // "body": $body-color,
+        "muted": $text-muted,
+        // "reset": inherit,
+      )
+    )
+  ),
+  "background-color": (
+    property: background-color,
+    class: bg,
+    values: map-merge(
+      $theme-colors,
+      $colors,
+    )
+  ),
+);
