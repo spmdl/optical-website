@@ -1,0 +1,25 @@
+.footer {
+  padding-top: 2.75rem;
+  padding-bottom: 2.4375em;
+  &__nav {
+    padding: 0.75em 1.5rem 0.75em 1.5rem;
+  }
+  // &__nav:first-child {
+  //   padding-left: 0;
+  // }
+  &__socialIcon {
+    font-size: 48px;
+    margin-left: 2rem;
+  }
+  &__info {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 0.5rem;
+    margin-top: 2.25rem;
+    margin-bottom: 2rem;
+  }
+  &__infoIcon {
+    font-size: 3rem;
+    vertical-align: middle;
+    margin-right: 0.8rem;
+  }
+}

@@ -1,0 +1,21 @@
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+	display: block;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  transition: .5s;
+}
+
+body {
+  line-height: 1.5rem;
+  font-family: $font-family-noto-sans;
+}
