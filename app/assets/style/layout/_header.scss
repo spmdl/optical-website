@@ -3,10 +3,14 @@
   justify-content: space-between;
   align-items: center;
   background: $primary;
-  padding-top: 1.875rem;
-  padding-bottom: 1.875rem;
-  padding-right: 5rem;
-  padding-left: 5rem;
+  padding: 1.875rem 5rem;
+  @include media-breakpoint-up(lg) {
+    padding: 1.875rem 2.5rem;
+  }
+  @include media-breakpoint-up(md) {
+    flex-direction: column;
+    padding: 10px 0px 0px 0px;
+  }
   &__replaceText {
     background: url(../images/logo.png) no-repeat;
     width: 80px;
@@ -15,10 +19,8 @@
     text-indent: 101%;
     overflow: hidden;
     white-space: nowrap;
-  }
-  &__nav {
-    display: flex;
-    font-size: 1.25em;
-    line-height: 1.875rem;
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0.625rem;
+    }
   }
 }

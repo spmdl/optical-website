@@ -3,13 +3,28 @@
   background: url("../images/banner.png") no-repeat center / cover;
   color: $brown;
   &__content {
-    // max-width: 576px;
     text-align: right;
+  }
+  &__subTitle {
+    font-size: 2.25rem;
+    line-height: 3.375rem;
+    @include media-breakpoint-up(lg) {
+      @include font-set(1.25rem, 1.875rem)
+    }
+    @include media-breakpoint-up(md) {
+      @include font-set(1rem)
+    }
   }
   &__title {
     font-size: 4rem;
     line-height: 6rem;
     font-weight: 900;
+    @include media-breakpoint-up(lg) {
+      @include font-set(3rem, 4.5rem)
+    }
+    @include media-breakpoint-up(md) {
+      @include font-set(2rem)
+    }
   }
 }
 .about {
@@ -85,5 +100,17 @@
     transform: translate(-50%, -50%);
     z-index: 2;
     white-space: nowrap;
+  }
+}
+.title {
+  @include font-set(3rem, 4.5rem);
+  margin-bottom: 2.5rem;
+  @include media-breakpoint-up(lg) {
+    @include font-set(2rem, 3rem);
+    margin-bottom: 2rem;
+  }
+  @include media-breakpoint-up(md) {
+    @include font-set(1.5rem);
+    margin-bottom: 1.25rem;
   }
 }

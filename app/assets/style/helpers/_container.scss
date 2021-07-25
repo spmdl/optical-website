@@ -1,7 +1,8 @@
-.container {
-  // max-width: 1200px;
-  max-width: 1140px;
-  height: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
+// 產生 container 所有尺寸樣式
+@each $breakpoint, $container-max-width in $container-max-widths {
+  $style-name: if($breakpoint == "", "container", "container-" + $breakpoint);
+  .#{$style-name} {
+    max-width: $container-max-width;
+    @include make-container();
+  }
 }

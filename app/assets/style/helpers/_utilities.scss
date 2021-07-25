@@ -114,6 +114,7 @@ $utilities: (
     values: $spacers
   ),
   "font-family": (
+    responsive: false,
     property: font-family,
     class: font,
     values: (
@@ -122,16 +123,19 @@ $utilities: (
   ),
   "font-size": (
     // rfs: true,
+    responsive: true,
     property: font-size,
     class: fs,
     values: $font-sizes
   ),
   "font-style": (
+    responsive: false,
     property: font-style,
     class: fst,
     values: italic normal
   ),
   "font-weight": (
+    responsive: true,
     property: font-weight,
     class: fw,
     values: (
@@ -142,6 +146,7 @@ $utilities: (
     )
   ),
   "line-height": (
+    responsive: false,
     property: line-height,
     class: lh,
     values: (
@@ -162,6 +167,7 @@ $utilities: (
     )
   ),
   "color": (
+    responsive: false,
     property: color,
     class: text,
     values: map-merge(map-merge(
@@ -175,11 +181,18 @@ $utilities: (
     )
   ),
   "background-color": (
+    responsive: false,
     property: background-color,
     class: bg,
     values: map-merge(
       $theme-colors,
       $colors,
     )
+  ),
+  "width-fluid": (
+    responsive: true,
+    property: width,
+    class: width,
+    values: ("fluid": 100%)
   ),
 );
