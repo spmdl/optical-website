@@ -6,6 +6,10 @@ $utilities: (
     class: d,
     values: inline inline-block block grid table table-row table-cell flex inline-flex none
   ),
+  "position": (
+    property: position,
+    values: static relative absolute fixed sticky
+  ),
   // Flex utilities
   "flex-direction": (
     responsive: true,
@@ -70,6 +74,12 @@ $utilities: (
     class: m,
     values: map-merge($spacers, (auto: auto))
   ),
+  "margin-end": (
+    responsive: true,
+    property: margin-right,
+    class: me,
+    values: map-merge($spacers, (auto: auto))
+  ),
   "margin-top": (
     responsive: true,
     property: margin-top,
@@ -113,6 +123,18 @@ $utilities: (
     class: pb,
     values: $spacers
   ),
+  "padding-end": (
+    responsive: true,
+    property: padding-right,
+    class: pe,
+    values: $spacers
+  ),
+  "padding-start": (
+    responsive: true,
+    property: padding-left,
+    class: ps,
+    values: $spacers
+  ),
   "font-family": (
     responsive: false,
     property: font-family,
@@ -129,13 +151,13 @@ $utilities: (
     values: $font-sizes
   ),
   "font-style": (
-    responsive: false,
+    // responsive: false,
     property: font-style,
     class: fst,
     values: italic normal
   ),
   "font-weight": (
-    responsive: true,
+    // responsive: true,
     property: font-weight,
     class: fw,
     values: (
@@ -146,7 +168,7 @@ $utilities: (
     )
   ),
   "line-height": (
-    responsive: false,
+    // responsive: false,
     property: line-height,
     class: lh,
     values: (
@@ -167,7 +189,7 @@ $utilities: (
     )
   ),
   "color": (
-    responsive: false,
+    // responsive: false,
     property: color,
     class: text,
     values: map-merge(map-merge(
@@ -181,7 +203,7 @@ $utilities: (
     )
   ),
   "background-color": (
-    responsive: false,
+    // responsive: false,
     property: background-color,
     class: bg,
     values: map-merge(

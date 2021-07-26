@@ -3,7 +3,7 @@ $white:       #ffffff;
 $pink:        #FBF2F2;
 $red:         #AA0601;
 $black:       #000000;
-$dark:        #111619;
+$dark:        #212529;
 $brown:       #650300;
 $gray:        #707070;
 
@@ -35,8 +35,9 @@ $spacers: (
   "6": 2rem,     // 32
   "7": 2.5rem,   // 40
   "8": 3rem,     // 48
-  "9": 3.75rem,  // 60
-  "10": 5rem,    // 80
+  "9": 3.5rem,   // 56
+  "10": 3.75rem, // 60
+  "11": 5rem,    // 80
 );
 
 // Body
@@ -49,16 +50,16 @@ $spacers: (
 // scss-docs-start grid-breakpoints
 $grid-breakpoints: (
   xs: 0,
-  md: 767px,
+  xl: 1200px,
   lg: 992px,
-  xl: 1200px
+  md: 767px,
 );
 // $grid-breakpoints: (
-//   xl: 1200px
-//   lg: 992px,
-//   md: 767px,
 //   xs: 0,
-// )
+//   md: 767px,
+//   lg: 992px,
+//   xl: 1200px
+// );
 
 // Grid containers
 $container-max-widths: (
@@ -70,7 +71,12 @@ $container-max-widths: (
   xxl: 1320px
 ) !default;
 
+$include-column-box-sizing: true !default;
+$enable-grid-classes:         true !default;
+$grid-columns:                12 !default;
 $grid-gutter-width:           1.5rem !default;
+$grid-row-columns:            6 !default;
+$gutters: $spacers !default;
 
 // Container padding
 $container-padding-x: $grid-gutter-width / 2 !default;

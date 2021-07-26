@@ -28,7 +28,7 @@
   }
 }
 .about {
-  max-width: 255px;
+  justify-content: center;
   &__icon {
     font-size: 100px;
     color: $brown;
@@ -42,54 +42,76 @@
     margin-bottom: .5rem;
   }
   &__content {
+    max-width: 255px;
     line-height: 1.5rem;
     text-align: left;
+    // word-break: break-all;
   }
 }
 .classicProduct {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2rem;
   &__img {
-    // width: 58.31%;
-    width: 635px;
-    height: 320px;
+    max-height: 320px;
     object-fit: cover;
   }
-  &__title {
+  &__subTitle {
     display: flex;
     align-items: center;
-    width: 42.69%;
     font-size: 3rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
+    line-height: 4.5rem;
     font-style: italic;
     text-transform: uppercase;
-    line-height: 4.5rem;
     color: $red;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    @include media-breakpoint-up(lg) {
+      @include font-set(1.75rem);
+    }
+    @include media-breakpoint-up(md) {
+      position: absolute;
+      justify-content: center;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
   }
   &__icon {
     font-size: 44px;
     color: $red;
     margin-right: 0.5rem;
+    @include media-breakpoint-up(lg) {
+      font-size: 36px;
+    }
   }
 }
 .crossoverProduct {
-  height: 705px;
   background: url("../images/bg.png") no-repeat center / cover;
-  &__list {
-    background: #fff;
-    position: relative;
-  }
   &__img {
-    width: 540px;
-    height: 455px;
-    opacity: 0.5;
+    position: relative;
+    &:hover::after {
+      content: '';
+      width: 100%;
+			height: 100%;
+			display: inline-block;
+			position: absolute;
+			left: 0;
+			top: 0;
+      filter: blur(15px);
+    }
+    &::before {
+      content: '';
+			width: 100%;
+			height: 100%;
+			display: inline-block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			background-color: rgba(255, 255, 255, 0.5);
+		}
+    &:hover::before {
+      content: none;
+    }
   }
-  &__title {
+  &__subTitle {
     font-size: 4.5rem;
     font-weight: 900;
     line-height: 72px;
@@ -100,6 +122,9 @@
     transform: translate(-50%, -50%);
     z-index: 2;
     white-space: nowrap;
+    @include media-breakpoint-up(lg) {
+      @include font-set(2rem, 1.5625rem)
+    }
   }
 }
 .title {
