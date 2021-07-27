@@ -1,9 +1,7 @@
 .form {
   justify-content: center;
-  @include media-breakpoint-up(md) {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-  }
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
   &__text {
     @include font-set(1.25rem, 1.875rem);
     margin-bottom: 1.25rem;
