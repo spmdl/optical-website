@@ -1,4 +1,8 @@
 $utilities: (
+  "overflow": (
+    property: overflow,
+    values: auto hidden visible scroll,
+  ),
   "display": (
     responsive: true,
     print: true,
