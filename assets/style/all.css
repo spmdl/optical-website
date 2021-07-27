@@ -890,6 +890,18 @@ table {
 .translucent-hover:hover {
   opacity: 0.5; }
 
+.overflow-auto {
+  overflow: auto; }
+
+.overflow-hidden {
+  overflow: hidden; }
+
+.overflow-visible {
+  overflow: visible; }
+
+.overflow-scroll {
+  overflow: scroll; }
+
 .d-inline {
   display: inline; }
 
@@ -3119,7 +3131,20 @@ body {
 .classicProduct__img {
   max-height: 320px;
   -o-object-fit: cover;
-     object-fit: cover; }
+     object-fit: cover;
+  -webkit-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out; }
+
+.classicProduct__img:hover {
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  -o-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-transform: scale(1.2, 1.2);
+      -ms-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2); }
 
 .classicProduct__subTitle {
   display: -webkit-box;
