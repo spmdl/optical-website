@@ -2,6 +2,9 @@
   height: 840px;
   background: url("../images/banner.png") no-repeat center / cover;
   color: $brown;
+  @include media-breakpoint-up(md) {
+    background: url("../images/banner-sm.png") no-repeat center / cover;
+  }
   &__content {
     text-align: right;
   }

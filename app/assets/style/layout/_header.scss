@@ -3,23 +3,28 @@
   justify-content: space-between;
   align-items: center;
   background: $primary;
-  padding: 1.875rem 5rem;
+  padding: 1.875rem 3.5rem 1.875rem 5.5rem;
   @include media-breakpoint-up(lg) {
-    padding: 1.875rem 2.5rem;
+    padding: 1.875rem 1.1875rem 1.875rem 2.4375rem;
   }
   @include media-breakpoint-up(md) {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
     flex-direction: column;
     padding: 10px 0px 0px 0px;
   }
   &__replaceText {
-    background: url(../images/logo.png) no-repeat;
-    width: 80px;
-    height: 50px;
+    background: url(../images/logo.png) no-repeat center / cover;
     display: block; 
+    width: 80px;
+    height: 48px;
     text-indent: 101%;
     overflow: hidden;
     white-space: nowrap;
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(md) {
+      width: 48px;
+      height: 29px;
       margin-bottom: 0.625rem;
     }
   }
