@@ -1,26 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="zh-Hant-TW">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><%- title %></title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
-
 <body>
-  <header class="header">
-    這是 header
-  </header>
-
+  <!-- header -->
+  <div class="header">
+    <h1><a href="#" class="header__replaceText">眼鏡行</a></h1>
+    <ul class="nav w-md-100">
+      <li class="nav__item"><a href="#" class="nav__link pink-hover">系列鏡框</a></li>
+      <li class="nav__item"><a href="#" class="nav__link pink-hover">門市據點</a></li>
+      <li class="nav__item"><a href="#" class="nav__link pink-hover">部落格</a></li>
+      <li class="nav__item"><a href="#" class="nav__link pink-hover">常見問題</a></li>
+    </ul>
+  </div>
+  <!-- main -->
   <%- contents %>
-
-  <footer class="footer">
-    footer
-  </footer>
-  <script src="./assets/js/vendors.js"></script>
-  <script src="./assets/js/all.js"></script>
+  <!-- footer -->
+  <div class="bg-primary">
+    <div class="footer container text-white">
+      <div class="footer__border d-flex justify-content-between">
+        <div class="">
+          <ul class="footer__nav d-flex align-items-center d-md-none">
+            <li><a class="footer__navLink" href="#">首頁</a></li>
+            <li><a class="footer__navLink" href="#">系列鏡框</a></li>
+            <li><a class="footer__navLink" href="#">門市據點</a></li>
+            <li><a class="footer__navLink" href="#">部落格</a></li>
+            <li><a class="footer__navLink" href="#">常見問題</a></li>
+          </ul>
+          <ul class="footer__info">
+            <li class="footer__infoItem">
+              <a href="tel:+0800-000-000" class="d-flex align-items-center">
+                <span class="material-icons material-icons-outlined footer__infoIcon">
+                  phone
+                </span>
+                <span class="footer__socialLink">0800-000-000</span>
+              </a>
+            </li>
+            <li class="footer__infoItem">
+              <a href="mailto:glasses@business.com" class="d-flex align-items-center">
+                <span class="material-icons material-icons-outlined footer__infoIcon">
+                  mail_outline
+                </span>
+                <span class="footer__socialLink">glasses@business.com</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="d-flex">
+          <li>
+            <a href="https://www.facebook.com/hexschool/" title="臉書粉絲團" target="_blank" class="translucent-hover">
+              <i class="fs-5 fs-lg-4 fs-md-3 me-6 me-lg-4 fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/hexschool/" title="IG icon" target="_blank" class="translucent-hover">
+              <i class="fs-5 fs-lg-4 fs-md-3 me-6 me-lg-4 fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://page.line.me/guv7422g?openQrModal=true" title="官方line群" target="_blank" class="translucent-hover">
+              <i class="fs-5 fs-lg-4 fs-md-3 fab fa-line"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="d-flex d-md-block justify-content-between align-items-center">
+        <p class="footer__copyright">Copyright © 2020 Glasses.All rights reserved.</p>
+        <div class="d-flex d-md-block">
+          <a href="#" class="footer__copyrightLink me-8 me-lg-4 me-md-0 mb-md-1 d-block">隱私權政策</a>
+          <a href="#" class="footer__copyrightLink d-block">服務條款</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <script src="./assets/js/all.js"></script> -->
 </body>
-
 </html>
