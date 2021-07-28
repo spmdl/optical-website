@@ -2,6 +2,7 @@
   border: none;
   background: $red;
   color: #fff;
+  transition: .5s;
   @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-border-radius);
   min-height: 54px;
   @include media-breakpoint-up(lg) {

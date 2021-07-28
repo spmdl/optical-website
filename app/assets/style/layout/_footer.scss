@@ -21,14 +21,14 @@
     position: relative;
     display: block;
     transition: all .3s;
-    // margin: auto;
-    right: 0;
-    bottom: 0;
+    margin: auto; /*使線段從中間展開*/
+    // right: 0;
+    // bottom: 0;
     width: 0%;
     top: 3px;
   }
   &__navLink:hover::after {
-    left: 0;
+    // left: 0;
     width: 100%;
   }
   &__nav li:first-child a {
