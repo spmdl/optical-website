@@ -900,6 +900,9 @@ button, input, optgroup, select, textarea {
   border: none;
   background: #AA0601;
   color: #fff;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   min-height: 54px; }
@@ -3118,12 +3121,11 @@ body {
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s;
-    right: 0;
-    bottom: 0;
+    margin: auto;
+    /*使線段從中間展開*/
     width: 0%;
     top: 3px; }
   .footer__navLink:hover::after {
-    left: 0;
     width: 100%; }
   .footer__nav li:first-child a {
     padding-left: 0; }
@@ -3239,14 +3241,12 @@ body {
     -o-transition: all 1s ease-out;
     transition: all 1s ease-out; }
   .classicProduct__img:hover {
-    -webkit-transition: -webkit-transform 0.5s ease;
-    transition: -webkit-transform 0.5s ease;
-    -o-transition: transform 0.5s ease;
-    transition: transform 0.5s ease;
-    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-    -webkit-transform: scale(1.2, 1.2);
-        -ms-transform: scale(1.2, 1.2);
-            transform: scale(1.2, 1.2); } }
+    -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -o-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2); } }
 
 .classicProduct__subTitle {
   display: -webkit-box;
