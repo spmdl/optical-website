@@ -861,20 +861,6 @@ button, input, optgroup, select, textarea {
     padding-left: 28px; }
   .form__checkbox:checked + .form__checkboxSpan {
     background: url(../images/check_box_black_24dp.svg) no-repeat left top; }
-  .form__submit {
-    width: 350px;
-    line-height: 54px;
-    border: none;
-    background: #AA0601;
-    color: #fff; }
-    @media (max-width: 992px) {
-      .form__submit {
-        width: 210px;
-        line-height: 40px; } }
-    @media (max-width: 767px) {
-      .form__submit {
-        width: 165px;
-        line-height: 36px; } }
   .form ::-webkit-input-placeholder {
     opacity: 0.2; }
   .form ::-moz-placeholder {
@@ -909,6 +895,22 @@ button, input, optgroup, select, textarea {
       .nav__link {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem; } }
+
+.btn {
+  border: none;
+  background: #AA0601;
+  color: #fff;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  min-height: 54px; }
+  @media (max-width: 992px) {
+    .btn {
+      padding: 0.25rem 0.5rem;
+      font-size: 0.875rem;
+      min-height: 40px; } }
+  @media (max-width: 767px) {
+    .btn {
+      min-height: 36px; } }
 
 .brown-hover:hover {
   background: #650300;
@@ -1651,8 +1653,23 @@ button, input, optgroup, select, textarea {
 .bg-gray {
   background-color: #707070; }
 
-.width-fluid {
+.w-25 {
+  width: 25%; }
+
+.w-50 {
+  width: 50%; }
+
+.w-75 {
+  width: 75%; }
+
+.w-100 {
   width: 100%; }
+
+.w-auto {
+  width: auto; }
+
+.mw-100 {
+  max-width: 100%; }
 
 @media (max-width: 1200px) {
   .d-xl-inline {
@@ -2097,8 +2114,16 @@ button, input, optgroup, select, textarea {
     text-align: right; }
   .text-xl-center {
     text-align: center; }
-  .width-xl-fluid {
-    width: 100%; } }
+  .w-xl-25 {
+    width: 25%; }
+  .w-xl-50 {
+    width: 50%; }
+  .w-xl-75 {
+    width: 75%; }
+  .w-xl-100 {
+    width: 100%; }
+  .w-xl-auto {
+    width: auto; } }
 
 @media (max-width: 992px) {
   .d-lg-inline {
@@ -2543,8 +2568,16 @@ button, input, optgroup, select, textarea {
     text-align: right; }
   .text-lg-center {
     text-align: center; }
-  .width-lg-fluid {
-    width: 100%; } }
+  .w-lg-25 {
+    width: 25%; }
+  .w-lg-50 {
+    width: 50%; }
+  .w-lg-75 {
+    width: 75%; }
+  .w-lg-100 {
+    width: 100%; }
+  .w-lg-auto {
+    width: auto; } }
 
 @media (max-width: 767px) {
   .d-md-inline {
@@ -2989,8 +3022,16 @@ button, input, optgroup, select, textarea {
     text-align: right; }
   .text-md-center {
     text-align: center; }
-  .width-md-fluid {
-    width: 100%; } }
+  .w-md-25 {
+    width: 25%; }
+  .w-md-50 {
+    width: 50%; }
+  .w-md-75 {
+    width: 75%; }
+  .w-md-100 {
+    width: 100%; }
+  .w-md-auto {
+    width: auto; } }
 
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
