@@ -1,7 +1,14 @@
 .card {
+  transition: transform .5s;
   &__item {
     display: flex;
     flex-direction: column;
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s;
+  }
+  &__item:hover {
+    transform: scale(1.01);
+    transition: all 0.5s cubic-bezier(.165, .84, .44, 1);
+    box-shadow: 0 40px 60px -20px rgba(12, 5, 62, 0.15);
   }
   &__body {
     flex-grow: 1;
