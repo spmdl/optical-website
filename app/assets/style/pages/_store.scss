@@ -1,0 +1,73 @@
+.location {
+  padding-top: 6rem;
+  padding-bottom: 8rem;
+  @include media-breakpoint-up(lg) {
+    padding-top: 3.75rem;
+    padding-bottom: 4.75rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+  }
+  @include media-breakpoint-up(md) {
+    padding-top: 1.75rem;
+    padding-bottom: 2.5rem;
+    margin: 0;
+  }
+  &__title {
+    @include font-set(3rem, 5rem, 700);
+    border-left: 8px solid $red-dark;
+    padding-left: 1rem;
+    margin-bottom: 3.75rem;
+    @include media-breakpoint-up(lg) {
+      border-width: 4px;
+      margin-bottom: 2.5rem;
+    }
+    @include media-breakpoint-up(md) {
+      @include font-set(1.75rem, 2.625rem);
+      margin-bottom: 1.5rem;
+    }
+  }
+  &__select {
+    display: block;
+    @include font-set(1.125rem, 1.625rem);
+    border: 0.1rem solid $gray-light;
+    color: #495057;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+    appearance: none;
+    padding: .625rem 1.25rem;
+    @include media-breakpoint-up(lg) {
+      padding: .625rem 1rem;
+    }
+    @include media-breakpoint-up(md) {
+      padding: .5rem 1rem;
+    }
+  }
+}
+.locationCard {
+  &__img {
+    height: auto;
+  }
+  &__title {
+    @include font-set(1.5rem, 2.25rem);
+    border: 1px solid $gray-light;
+    margin-bottom: -1px;
+    padding: 0.75rem 1.5rem;
+    @include media-breakpoint-up(lg) {
+      @include font-set(1rem, 1.5rem, 700);
+      padding: .5rem 1.5rem;
+    }
+  }
+  &__body {
+    padding: 1rem 1.5rem;
+    border: 1px solid $gray-light;
+  }
+  &__text {
+    color: $dark;
+    @include font-set(1.25rem, 1.875rem);
+    @include media-breakpoint-up(lg) {
+      @include font-set(.875rem, 1.3125rem);
+    }
+  }
+}

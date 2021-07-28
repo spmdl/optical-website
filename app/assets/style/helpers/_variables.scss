@@ -2,10 +2,12 @@
 $white:       #ffffff;
 $pink:        #FBF2F2;
 $red:         #AA0601;
+$red-dark:    #9F1213;
 $black:       #000000;
 $dark:        #212529;
 $brown:       #650300;
 $gray:        #707070;
+$gray-light:  #CED4DA;
 
 $colors: (
   "pink":   $pink,
@@ -26,6 +28,7 @@ $theme-colors: (
 // Spacing
 $spacers: (
   "0": 0,
+  "s": .75rem,   // 12
   "1": 0.5rem,   // 8
   "2": 1rem,     // 16
   "3": 1.25rem,  // 20
@@ -104,10 +107,18 @@ $line-heights: (
 
 $font-sizes: (
   "1": .875rem,  // 14
-  "2": 1.25rem,  // 20
-  "3": 1.5rem,   // 24
-  "4": 2.25rem,  // 36
-  "5": 3rem,     // 48
+  "2": 1rem,     // 16
+  "3": 1.25rem,  // 20
+  "4": 1.5rem,   // 24
+  "5": 2.25rem,  // 36
+  "6": 3rem,     // 48
+);
+
+$icon-sizes: (
+  "s": 1.25rem,   // 20
+  "m": 1.5rem,    // 24
+  "l": 2.5rem,    // 40
+  "xl": 3rem,     // 48
 );
 
 $max-widths: (

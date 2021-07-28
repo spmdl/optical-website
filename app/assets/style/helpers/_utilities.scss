@@ -182,6 +182,14 @@ $utilities: (
       center: center,
     )
   ),
+  "white-space": (
+    property: white-space,
+    class: text,
+    values: (
+      wrap: normal,
+      nowrap: nowrap,
+    )
+  ),
   "color": (
     // responsive: false,
     property: color,
