@@ -1,14 +1,17 @@
 .card {
-  transition: transform .5s;
   &__item {
     display: flex;
     flex-direction: column;
-    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s;
   }
-  &__item:hover {
-    transform: scale(1.01);
-    transition: all 0.5s cubic-bezier(.165, .84, .44, 1);
-    box-shadow: 0 40px 60px -20px rgba(12, 5, 62, 0.15);
+  @media(min-width: 992px) {
+    &__item {
+      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s;
+    }
+    &__item:hover {
+      transform: scale(1.01);
+      transition: all 0.5s cubic-bezier(.165, .84, .44, 1);
+      box-shadow: 0 40px 60px -20px rgba(12, 5, 62, 0.15);
+    }
   }
   &__body {
     flex-grow: 1;
@@ -28,15 +31,5 @@
     height: auto;
     border-radius: .25rem .25rem 0 0;
     object-fit: cover;
-  }
-  &__title {
-    font-size: 0.875rem;
-    line-height: 21px;
-    margin-bottom: 0.5rem;
-  }
-  &__footer {
-    font-size: 0.875rem;
-    color: $gray;
-    margin-top: 1rem;
   }
 }

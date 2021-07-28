@@ -6,3 +6,16 @@
     @include make-container();
   }
 }
+
+// 產生 max-width 所有尺寸樣式
+@each $key, $max-width in $max-widths {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+      .width#{$infix}-#{$key} {
+        max-width: $max-width;
+        margin: 0 auto;
+      }
+    }
+  }
+}

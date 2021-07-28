@@ -164,23 +164,13 @@ $utilities: (
     // responsive: true,
     property: font-weight,
     class: fw,
-    values: (
-      light: $font-weight-light,
-      normal: $font-weight-normal,
-      bold: $font-weight-bold,
-      bolder: $font-weight-bolder
-    )
+    values: $font-weights
   ),
   "line-height": (
-    // responsive: false,
+    responsive: true,
     property: line-height,
     class: lh,
-    values: (
-      1: 1,
-      // sm: $line-height-sm,
-      m: $line-height-m,
-      l: $line-height-l,
-    )
+    values: $line-heights
   ),
   "text-align": (
     responsive: true,

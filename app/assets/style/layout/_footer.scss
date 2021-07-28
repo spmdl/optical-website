@@ -10,7 +10,7 @@
     padding-bottom: 2rem;
   }
   &__navLink {
-    padding: 0.75em 1.5rem;
+    padding: 0.6875em 1.5rem;
     @include media-breakpoint-up(lg) {
       padding: .375rem 1.25rem;
     }
@@ -35,8 +35,6 @@
     padding-left: 0;
   }
   &__socialLink {
-    font-family: $font-family-roboto;
-    font-weight: 300;
     @include font-set(2.25rem, 3.375rem);
     @include media-breakpoint-up(lg) {
       @include font-set(1.25rem, 1.875rem);
@@ -54,7 +52,7 @@
   }
   &__info {
     padding-bottom: 0.5rem;
-    margin-top: 2.25rem;
+    margin-top: 1.5rem;
     @include media-breakpoint-up(md) {
       margin-top: 0;
       padding-bottom: 0.625rem;

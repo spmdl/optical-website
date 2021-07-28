@@ -5,28 +5,26 @@
   @include media-breakpoint-up(md) {
     background: url("../images/banner-sm.png") no-repeat center / cover;
   }
-  &__content {
-    text-align: right;
+  @media(min-width: 768px) {
+    padding-right: 2.4375rem;
   }
   &__subTitle {
-    font-size: 2.25rem;
-    line-height: 3.375rem;
+    font-family: $font-family-noto-sans;
+    @include font-set(2.25rem, 3.375rem);
     @include media-breakpoint-up(lg) {
-      @include font-set(1.25rem, 1.875rem)
+      @include font-set(1.25rem, 1.875rem, 500);
     }
     @include media-breakpoint-up(md) {
-      @include font-set(1rem)
+      font-size: 1rem;
     }
   }
   &__title {
-    font-size: 4rem;
-    line-height: 6rem;
-    font-weight: 900;
+    @include font-set(4rem, 6rem, 700);
     @include media-breakpoint-up(lg) {
       @include font-set(3rem, 4.5rem)
     }
     @include media-breakpoint-up(md) {
-      @include font-set(2rem)
+      font-size: 2rem;
     }
   }
 }
@@ -38,41 +36,34 @@
     margin-bottom: 1rem;
   }
   &__title {
-    font-size: 1.5rem;
+    @include font-set(1.5rem, 2.25rem, 700);
     color: $brown;
-    font-weight: 900;
-    line-height: 2.25rem;
     margin-bottom: .5rem;
-  }
-  &__content {
-    max-width: 255px;
-    line-height: 1.5rem;
-    text-align: left;
-    // word-break: break-all;
   }
 }
 .classicProduct {
   &__img {
     max-height: 320px;
     object-fit: cover;
-    transition: all 1s ease-out;
   }
-  &__img:hover {
-    transition:transform 0.5s ease;
-    transform: scale(1.2,1.2);
+  @media(min-width: 992px) {
+    &__img {
+      transition: all 1s ease-out;
+    }
+    &__img:hover {
+      transition:transform 0.5s ease;
+      transform: scale(1.2,1.2);
+    }
   }
   &__subTitle {
     display: flex;
     align-items: center;
-    font-size: 3rem;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    line-height: 4.5rem;
+    @include font-set(3rem, 4.5rem, 900);
     font-style: italic;
     text-transform: uppercase;
     color: $red;
     @include media-breakpoint-up(lg) {
-      @include font-set(1.75rem);
+      font-size: 1.75rem;
     }
     @include media-breakpoint-up(md) {
       position: absolute;
@@ -83,11 +74,11 @@
     }
   }
   &__icon {
-    font-size: 44px;
+    font-size: 2.75rem;
     color: $red;
     margin-right: 0.5rem;
     @include media-breakpoint-up(lg) {
-      font-size: 36px;
+      font-size: 2.25rem;
     }
   }
 }
@@ -110,23 +101,22 @@
     filter: blur(5px);
   }
   &__subTitle {
-    font-size: 4.5rem;
-    font-weight: 900;
-    line-height: 72px;
+    @include font-set(4.5rem, 4.5rem, 700);
     color: $red;
+    white-space: nowrap;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2;
-    white-space: nowrap;
+    // z-index: 2;
     @include media-breakpoint-up(lg) {
       @include font-set(2rem, 1.5625rem)
     }
   }
 }
 .title {
-  @include font-set(3rem, 4.5rem);
+  text-align: center;
+  @include font-set(3rem, 4.5rem, 700);
   margin-bottom: 2.5rem;
   @include media-breakpoint-up(lg) {
     @include font-set(2rem, 3rem);

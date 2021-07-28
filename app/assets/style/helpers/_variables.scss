@@ -68,7 +68,7 @@ $container-max-widths: (
   md: 720px,
   lg: 960px,
   xl: 1140px,
-  xxl: 1320px
+  xxl: 1320px,
 ) !default;
 
 $include-column-box-sizing: true !default;
@@ -88,20 +88,27 @@ $variable-prefix:             bs- !default;
 // Gradient
 $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 
-$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 
 // Font, line-height, and color for body text, headings, and more.
 $font-family-noto-sans: "Noto Sans TC", sans-serif;
-$font-family-roboto:    'Roboto', sans-serif;
+$font-family-roboto:    "Roboto", sans-serif;
 
-$font-weight-light:     300;
-$font-weight-normal:    400;
-$font-weight-bold:      700;
-$font-weight-bolder:    900;
+$font-weights: (
+  "light":    300,
+  "regular":  400,
+  "medium":   500,
+  "bold":     700,
+  "black":    900,
+);
 
-$line-height-m:        3.375rem;   //54
-$line-height-l:        4.5rem;     //72
+$line-heights: (
+  "1": 1,
+  "xs": 1.3125rem,     //21
+  "m":  3.375rem,      //54
+  "l":  4.5rem,        //72
+);
 
 $font-sizes: (
   "1": .875rem,  // 14
@@ -109,6 +116,10 @@ $font-sizes: (
   "3": 1.5rem,   // 24
   "4": 2.25rem,  // 36
   "5": 3rem,     // 48
+);
+
+$max-widths: (
+  "s": 255px
 );
 
 // Typography
