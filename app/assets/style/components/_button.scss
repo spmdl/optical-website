@@ -1,15 +1,25 @@
-.btn {
-  border: none;
-  background: $red;
-  color: #fff;
-  transition: .5s;
-  @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-border-radius);
-  min-height: 54px;
-  @include media-breakpoint-up(lg) {
-    @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-border-radius-sm);
-    min-height: 40px;
-  }
-  @include media-breakpoint-up(md) {
-    min-height: 36px;
+$btn-types: (
+  primary: $primary #fff $pink $secondary $secondary,
+  black: $black #fff $pink $primary $primary,
+);
+@each $key, $value in $btn-types {
+  .btn-#{$key} {
+    border: none;
+    cursor: pointer;
+    background: nth($value, 1);
+    color: nth($value, 2);
+    transition: .5s;
+    @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-border-radius);
+    min-height: 54px;
+    @include media-breakpoint-up(lg) {
+      @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-border-radius-sm);
+      min-height: 40px;
+    }
+    @include media-breakpoint-up(md) {
+      min-height: 36px;
+    }
+    &:hover {
+      @include btn-hover(nth($value, 3), nth($value, 4), nth($value, 5));
+    }
   }
 }

@@ -3,3 +3,8 @@
   font-size: $font-size;
   // border-radius: $border-radius;
 }
+@mixin btn-hover($color, $border-color, $background-color) {
+  color: $color;
+  border-color: $border-color;
+  background-color: $background-color;
+}

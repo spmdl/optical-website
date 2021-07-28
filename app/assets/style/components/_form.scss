@@ -36,6 +36,7 @@
   }
   &__textarea {
     min-height: 136px;
+    font-family: inherit;
     @include media-breakpoint-up(lg) {
       @include font-set(.875rem, 1.3125rem);
       padding: .5rem .75rem;
