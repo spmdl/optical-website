@@ -18,13 +18,11 @@ $colors: (
 );
 
 $primary:   $red;
-// scss-docs-start theme-colors-map
 $theme-colors: (
   "primary":    $primary
 );
 
 // Spacing
-// scss-docs-start spacer-variables-maps
 $spacers: (
   "0": 0,
   "1": 0.5rem,   // 8
@@ -47,19 +45,12 @@ $spacers: (
 // $link-decoration:   none;
 
 // Grid breakpoints
-// scss-docs-start grid-breakpoints
 $grid-breakpoints: (
   xs: 0,
   xl: 1200px,
   lg: 992px,
   md: 767px,
 );
-// $grid-breakpoints: (
-//   xs: 0,
-//   md: 767px,
-//   lg: 992px,
-//   xl: 1200px
-// );
 
 // Grid containers
 $container-max-widths: (
@@ -126,3 +117,17 @@ $max-widths: (
 // Font, line-height, and color for body text, headings, and more.
 $small-font-size:           .875em !default;
 $text-muted:                $gray !default;
+
+// button
+$btn-padding-y:         .375rem;
+$btn-padding-x:         .75rem;
+$btn-font-size:         1rem;
+$btn-border-radius:     .25rem;
+$btn-padding-y-sm:      .25rem;
+$btn-padding-x-sm:      .5rem;
+$btn-font-size-sm:      .875rem;
+$btn-border-radius-sm:  .2rem;
+$btn-padding-y-lg:      .5rem;
+$btn-padding-x-lg:      1rem;
+$btn-font-size-lg:      1.25rem;
+$btn-border-radius-lg:  .3rem;

@@ -1,0 +1,14 @@
+.btn {
+  border: none;
+  background: $red;
+  color: #fff;
+  @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-border-radius);
+  min-height: 54px;
+  @include media-breakpoint-up(lg) {
+    @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-border-radius-sm);
+    min-height: 40px;
+  }
+  @include media-breakpoint-up(md) {
+    min-height: 36px;
+  }
+}
