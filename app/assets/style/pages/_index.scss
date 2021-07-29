@@ -1,7 +1,8 @@
 .banner {
   height: 840px;
-  background: url("../images/banner.png") no-repeat center / cover;
   color: $brown;
+  background: url("../images/banner.png") no-repeat center / cover;
+  background-attachment: fixed;
   @include media-breakpoint-up(md) {
     background: url("../images/banner-sm.png") no-repeat center / cover;
   }
