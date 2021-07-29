@@ -27,26 +27,21 @@ $theme-colors: (
 
 // Spacing
 $spacers: (
-  "0": 0,
-  "s": .75rem,   // 12
-  "1": 0.5rem,   // 8
-  "2": 1rem,     // 16
-  "3": 1.25rem,  // 20
-  "4": 1.5rem,   // 24
-  "5": 1.875rem, // 30
-  "6": 2rem,     // 32
-  "7": 2.5rem,   // 40
-  "8": 3rem,     // 48
-  "9": 3.5rem,   // 56
+  "0":  0,
+  "xs": .25rem,  // 4
+  "s":  .75rem,   // 12
+  "1":  0.5rem,   // 8
+  "2":  1rem,     // 16
+  "3":  1.25rem,  // 20
+  "4":  1.5rem,   // 24
+  "5":  1.875rem, // 30
+  "6":  2rem,     // 32
+  "7":  2.5rem,   // 40
+  "8":  3rem,     // 48
+  "9":  3.5rem,   // 56
   "10": 3.75rem, // 60
   "11": 5rem,    // 80
 );
-
-// Body
-
-// Links
-// $link-color:        $primary !default;
-// $link-decoration:   none;
 
 // Grid breakpoints
 $grid-breakpoints: (
@@ -65,7 +60,7 @@ $container-max-widths: (
   sm: 540px,
 );
 
-$include-column-box-sizing: true !default;
+$include-column-box-sizing:   true !default;
 $enable-grid-classes:         true !default;
 $grid-columns:                12 !default;
 $grid-gutter-width:           1.5rem !default;
@@ -76,7 +71,6 @@ $gutters: $spacers !default;
 $container-padding-x: $grid-gutter-width / 2 !default;
 
 // Typography
-// Prefix for :root CSS variables
 $variable-prefix:             bs- !default;
 
 // Gradient
@@ -98,36 +92,34 @@ $font-weights: (
 );
 
 $line-heights: (
-  "1": 1,
-  "xs": 1.3125rem,     //21
-  "m":  3.375rem,      //54
+  "s":  1.3125rem,     //21
+  "m":  1.6875rem,     //27
   "l":  4.5rem,        //72
+  "xl": 6rem,          //96
+  "1":  1.5rem,        //24
+  "2":  1.875rem,      //30
+  "3":  2.25rem,       //36
+  "4":  3rem,          //48
+  "5":  3.375rem,      //54
+  "6":  4.5rem,        //72
 );
 
 $font-sizes: (
-  "1": .875rem,  // 14
-  "2": 1rem,     // 16
-  "3": 1.25rem,  // 20
-  "4": 1.5rem,   // 24
-  "5": 2.25rem,  // 36
-  "6": 3rem,     // 48
-);
-
-$icon-sizes: (
-  "s": 1.25rem,   // 20
-  "m": 1.5rem,    // 24
-  "l": 2.5rem,    // 40
-  "xl": 3rem,     // 48
+  "s":   .875rem,   // 14
+  "m":   1.1875rem, // 19
+  "xl":  4rem,      // 64
+  "xxl": 6.25rem,   // 100
+  "1":   1rem,      // 16
+  "2":   1.25rem,   // 20
+  "3":   1.5rem,    // 24
+  "4":   2rem,      // 32
+  "5":   2.25rem,   // 36
+  "6":   3rem,      // 48
 );
 
 $max-widths: (
   "s": 255px
 );
-
-// Typography
-// Font, line-height, and color for body text, headings, and more.
-$small-font-size:           .875em !default;
-$text-muted:                $gray !default;
 
 // button
 $btn-padding-y:         .375rem;

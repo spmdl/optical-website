@@ -1,24 +1,4 @@
 .form {
-  justify-content: center;
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
-  &__text {
-    @include font-set(1.25rem, 1.875rem);
-    margin-bottom: 1.25rem;
-    @include media-breakpoint-up(lg) {
-      @include font-set(1rem, 1.5rem);
-      margin-bottom: 1rem;
-    }
-    @include media-breakpoint-up(md) {
-      margin-bottom: .5rem;
-    }
-  }
-  &__label {
-    margin-bottom: 0.25rem;
-    @include media-breakpoint-up(lg) {
-      @include font-set(.875rem, 1.3125rem);
-    }
-  }
   &__control {
     display: block;
     width: 100%;
@@ -37,13 +17,6 @@
   &__textarea {
     min-height: 136px;
     font-family: inherit;
-    @include media-breakpoint-up(lg) {
-      @include font-set(.875rem, 1.3125rem);
-      padding: .5rem .75rem;
-    }
-    @include media-breakpoint-up(md) {
-      padding: .4375rem .75rem .5625rem .75rem;
-    }
   }
   &__checkbox {
     display: none;

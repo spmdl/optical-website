@@ -9,7 +9,6 @@
     padding-right: 2.4375rem;
   }
   &__subTitle {
-    font-family: $font-family-noto-sans;
     @include font-set(2.25rem, 3.375rem);
     @include media-breakpoint-up(lg) {
       @include font-set(1.25rem, 1.875rem, 500);
@@ -17,28 +16,6 @@
     @include media-breakpoint-up(md) {
       font-size: 1rem;
     }
-  }
-  &__title {
-    @include font-set(4rem, 6rem, 700);
-    @include media-breakpoint-up(lg) {
-      @include font-set(3rem, 4.5rem)
-    }
-    @include media-breakpoint-up(md) {
-      font-size: 2rem;
-    }
-  }
-}
-.about {
-  justify-content: center;
-  &__icon {
-    font-size: 100px;
-    color: $brown;
-    margin-bottom: 1rem;
-  }
-  &__title {
-    @include font-set(1.5rem, 2.25rem, 700);
-    color: $brown;
-    margin-bottom: .5rem;
   }
 }
 .classicProduct {
@@ -71,14 +48,6 @@
       top: 50%;
       left: 0;
       transform: translateY(-50%);
-    }
-  }
-  &__icon {
-    font-size: 2.75rem;
-    color: $red;
-    margin-right: 0.5rem;
-    @include media-breakpoint-up(lg) {
-      font-size: 2.25rem;
     }
   }
 }

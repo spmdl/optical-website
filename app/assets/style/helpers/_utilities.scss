@@ -167,7 +167,7 @@ $utilities: (
     values: italic normal
   ),
   "font-weight": (
-    // responsive: true,
+    responsive: true,
     property: font-weight,
     class: fw,
     values: $font-weights
@@ -205,7 +205,7 @@ $utilities: (
         $colors,
       ),(    
         // "body": $body-color,
-        "muted": $text-muted,
+        "muted": $gray,
         // "reset": inherit,
       )
     )

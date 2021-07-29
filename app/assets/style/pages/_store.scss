@@ -76,11 +76,4 @@
     padding: 1rem 1.5rem;
     border: 1px solid $gray-light;
   }
-  &__text {
-    color: $dark;
-    @include font-set(1.25rem, 1.875rem);
-    @include media-breakpoint-up(lg) {
-      @include font-set(.875rem, 1.3125rem);
-    }
-  }
 }
