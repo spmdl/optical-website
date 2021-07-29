@@ -4518,22 +4518,6 @@ body {
         font-size: 2rem;
         line-height: 1.5625rem; } }
 
-.title {
-  text-align: center;
-  font-size: 3rem;
-  line-height: 4.5rem;
-  font-weight: 700;
-  margin-bottom: 2.5rem; }
-  @media (max-width: 992px) {
-    .title {
-      font-size: 2rem;
-      line-height: 3rem;
-      margin-bottom: 2rem; } }
-  @media (max-width: 767px) {
-    .title {
-      font-size: 1.5rem;
-      margin-bottom: 1.25rem; } }
-
 .location {
   padding-top: 6rem;
   padding-bottom: 8rem; }
