@@ -4364,9 +4364,12 @@ body {
     padding: .625rem 1.25rem; }
     @media (max-width: 992px) {
       .location__select {
+        font-size: 1rem;
+        line-height: 1.5rem;
         padding: .625rem 1rem; } }
     @media (max-width: 767px) {
       .location__select {
+        font-size: 0.875rem;
         padding: .5rem 1rem; } }
 
 .locationCard__img {
@@ -4374,6 +4377,19 @@ body {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover; }
+
+@media (min-width: 992px) {
+  .locationCard__img {
+    -webkit-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out; }
+  .locationCard__img:hover {
+    -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -o-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2); } }
 
 .locationCard__title {
   font-size: 1.5rem;
