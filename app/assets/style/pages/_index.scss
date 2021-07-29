@@ -84,16 +84,3 @@
     }
   }
 }
-.title {
-  text-align: center;
-  @include font-set(3rem, 4.5rem, 700);
-  margin-bottom: 2.5rem;
-  @include media-breakpoint-up(lg) {
-    @include font-set(2rem, 3rem);
-    margin-bottom: 2rem;
-  }
-  @include media-breakpoint-up(md) {
-    @include font-set(1.5rem);
-    margin-bottom: 1.25rem;
-  }
-}
