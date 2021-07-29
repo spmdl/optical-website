@@ -54,17 +54,16 @@ $grid-breakpoints: (
   xl: 1200px,
   lg: 992px,
   md: 767px,
+  sm: 576px,
 );
 
 // Grid containers
 $container-max-widths: (
-  "": 1140px,
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
   xl: 1140px,
-  xxl: 1320px,
-) !default;
+  lg: 960px,
+  md: 720px,
+  sm: 540px,
+);
 
 $include-column-box-sizing: true !default;
 $enable-grid-classes:         true !default;

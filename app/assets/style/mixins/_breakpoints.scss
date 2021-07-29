@@ -8,10 +8,14 @@
     @content;
   }
 }
+
+// 回傳斷點除了 0 以外的 value
 @function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
   $min: map-get($breakpoints, $name);
   @return if($min != 0, $min, null);
 }
+
+// making responsive utilities（如果是最小斷點，則返回一個空字符串，否則返回前面帶有破折號的名稱）
 @function breakpoint-infix($name, $breakpoints: $grid-breakpoints) {
   @return if(breakpoint-min($name, $breakpoints) == null, "", "-#{$name}");
 }
