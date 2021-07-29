@@ -4418,8 +4418,9 @@ body {
 
 .banner {
   height: 840px;
+  color: #650300;
   background: url("../images/banner.png") no-repeat center/cover;
-  color: #650300; }
+  background-attachment: fixed; }
   @media (max-width: 767px) {
     .banner {
       background: url("../images/banner-sm.png") no-repeat center/cover; } }
