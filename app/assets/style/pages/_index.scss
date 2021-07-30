@@ -12,7 +12,7 @@
   &__subTitle {
     @include font-set(2.25rem, 3.375rem);
     @include media-breakpoint-up(lg) {
-      @include font-set(1.25rem, 1.875rem, 500);
+    @include font-set(1.25rem, 1.875rem, 500);
     }
     @include media-breakpoint-up(md) {
       font-size: 1rem;
