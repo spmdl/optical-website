@@ -27,7 +27,7 @@
   <div class="container d-flex justify-content-end align-items-center">
     <div class="text-end">
       <h3 class="banner__subTitle">Promise-Desert 2020 早春系列</h3>
-      <p class="fs-xl fs-lg-6 fs-md-4 lh-xl lh-lg-6 fw-bold">看得清，才能看得遠</p>
+      <h2 class="fs-xl fs-lg-6 fs-sm-4 lh-xl lh-lg-6 fw-bold">看得清，才能看得遠</h2>
     </div>
   </div>
 </div>
@@ -192,34 +192,36 @@
   </ul>
 </div>
 <div class="bg-pink pt-10 pt-lg-7 pt-md-6 pb-11 pb-lg-9 pb-md-7">
-  <div class="form container">
-    <div class="row justify-content-center">
-      <div class="col-8 col-md-12">
-        <h2 class="text-center fw-bold fs-6 fs-lg-4 fs-md-3 lh-6 lh-lg-4 mb-7 mb-lg-6 mb-md-3">聯絡我們</h2>
-        <p class="fs-2 fs-lg-1 lh-2 lh-lg-1 mb-3 mb-lg-2 mb-md-1">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
-        <div class="mb-2 mb-lg-1">
-          <label class="fs-lg-s lh-lg-s mb-xs" for="name">姓名</label>
-          <input class="form__control" type="text" id="name" placeholder="陳小明">
-        </div>
-        <div class="mb-2 mb-lg-1">
-          <label class="fs-lg-s lh-lg-s mb-xs" for="phone">聯絡電話</label>
-          <input class="form__control" type="text" id="phone" placeholder="0912-345-678">
-        </div>
-        <div class="mb-2 mb-lg-1">
-          <label class="fs-lg-s lh-lg-s mb-xs" for="email">電子郵件</label>
-          <input class="form__control" type="email" id="email" placeholder="example@email.com">
-        </div>
-        <div class="mb-2 mb-lg-1">
-          <label class="fs-lg-s lh-lg-s mb-xs" for="opinion">意見反應</label>
-          <textarea class="form__control form__textarea" name="opinion" id="opinion" placeholder="輸入您的意見" required></textarea>
-        </div>
-        <label>
-          <input type="checkbox" class="form__checkbox">
-          <span class="form__checkboxSpan mb-7 mb-lg-3">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</span>
-        </label>
-        <div class="d-flex justify-content-center">
-          <button type="submit" class="btn btn-primary btn-sm col-4 col-md-6"><a href="#">確認送出</a></button>
-        </div>
+  <div class="container">
+    <div class="row">
+      <h2 class="text-center fw-bold fs-6 fs-lg-4 fs-md-3 lh-6 lh-lg-4 mb-7 mb-lg-6 mb-md-3">聯絡我們</h2>
+      <div class="col-8 col-md-12 mx-auto">
+        <form class="form">
+          <p class="fs-2 fs-lg-1 lh-2 lh-lg-1 mb-3 mb-lg-2 mb-md-1">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
+          <div class="mb-2 mb-lg-1">
+            <label class="fs-lg-s lh-lg-s mb-xs" for="name">姓名</label>
+            <input class="form__control" type="text" name="name" id="name" placeholder="陳小明" required>
+          </div>
+          <div class="mb-2 mb-lg-1">
+            <label class="fs-lg-s lh-lg-s mb-xs" for="phone">聯絡電話</label>
+            <input class="form__control" type="text" name="phoneNumber" id="phone" placeholder="0912-345-678" required>
+          </div>
+          <div class="mb-2 mb-lg-1">
+            <label class="fs-lg-s lh-lg-s mb-xs" for="email">電子郵件</label>
+            <input class="form__control" type="email" name="email" id="email" placeholder="example@email.com" required>
+          </div>
+          <div class="mb-2 mb-lg-1">
+            <label class="fs-lg-s lh-lg-s mb-xs" for="feedback">意見反應</label>
+            <textarea class="form__control form__textarea" name="feedback" id="feedback" placeholder="輸入您的意見" required></textarea>
+          </div>
+          <label>
+            <input type="checkbox" class="form__checkbox">
+            <span class="form__checkboxSpan mb-7 mb-lg-3">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</span>
+          </label>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary form__submit">送出</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
@@ -275,10 +277,14 @@
       </div>
       <div class="d-flex d-md-block justify-content-between align-items-center">
         <p class="fs-md-s lh-md-s mb-md-1">Copyright © 2020 Glasses.All rights reserved.</p>
-        <div class="d-flex d-md-block">
-          <a href="#" class="fs-s lh-s translucent-hover me-8 me-lg-4 me-md-0 mb-md-1">隱私權政策</a>
-          <a href="#" class="fs-s lh-s translucent-hover">服務條款</a>
-        </div>
+        <ul class="d-flex d-md-block">
+          <li>
+            <a href="#" class="fs-s lh-s translucent-hover me-8 me-lg-4 me-md-0 mb-md-1">隱私權政策</a>
+          </li>
+          <li>
+            <a href="#" class="fs-s lh-s translucent-hover">服務條款</a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>

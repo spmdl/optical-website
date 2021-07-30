@@ -1013,6 +1013,15 @@ table {
 .form__checkbox:checked + .form__checkboxSpan {
   background: url(../images/check_box_black_24dp.svg) no-repeat left top; }
 
+.form__submit {
+  width: 350px; }
+  @media (max-width: 992px) {
+    .form__submit {
+      width: 200px; } }
+  @media (max-width: 767px) {
+    .form__submit {
+      width: 165px; } }
+
 .form ::-webkit-input-placeholder {
   opacity: 0.2; }
 
@@ -1394,6 +1403,10 @@ table {
 .mx-11 {
   margin-left: 5rem;
   margin-right: 5rem; }
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto; }
 
 .me-0 {
   margin-right: 0; }
@@ -2215,6 +2228,9 @@ table {
   .mx-xl-11 {
     margin-left: 5rem;
     margin-right: 5rem; }
+  .mx-xl-auto {
+    margin-left: auto;
+    margin-right: auto; }
   .me-xl-0 {
     margin-right: 0; }
   .me-xl-xs {
@@ -2791,6 +2807,9 @@ table {
   .mx-lg-11 {
     margin-left: 5rem;
     margin-right: 5rem; }
+  .mx-lg-auto {
+    margin-left: auto;
+    margin-right: auto; }
   .me-lg-0 {
     margin-right: 0; }
   .me-lg-xs {
@@ -3367,6 +3386,9 @@ table {
   .mx-md-11 {
     margin-left: 5rem;
     margin-right: 5rem; }
+  .mx-md-auto {
+    margin-left: auto;
+    margin-right: auto; }
   .me-md-0 {
     margin-right: 0; }
   .me-md-xs {
@@ -3943,6 +3965,9 @@ table {
   .mx-sm-11 {
     margin-left: 5rem;
     margin-right: 5rem; }
+  .mx-sm-auto {
+    margin-left: auto;
+    margin-right: auto; }
   .me-sm-0 {
     margin-right: 0; }
   .me-sm-xs {
@@ -4424,6 +4449,7 @@ body {
   background-attachment: fixed; }
   @media (max-width: 767px) {
     .banner {
+      height: 394px;
       background: url("../images/banner-sm.png") no-repeat center/cover; } }
   @media (min-width: 768px) {
     .banner {
@@ -4436,7 +4462,7 @@ body {
         font-size: 1.25rem;
         line-height: 1.875rem;
         font-weight: 500; } }
-    @media (max-width: 767px) {
+    @media (max-width: 576px) {
       .banner__subTitle {
         font-size: 1rem; } }
 
