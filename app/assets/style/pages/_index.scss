@@ -4,6 +4,7 @@
   background: url("../images/banner.png") no-repeat center / cover;
   background-attachment: fixed;
   @include media-breakpoint-up(md) {
+    height: 394px;
     background: url("../images/banner-sm.png") no-repeat center / cover;
   }
   @media(min-width: 768px) {
@@ -14,7 +15,7 @@
     @include media-breakpoint-up(lg) {
     @include font-set(1.25rem, 1.875rem, 500);
     }
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(sm) {
       font-size: 1rem;
     }
   }

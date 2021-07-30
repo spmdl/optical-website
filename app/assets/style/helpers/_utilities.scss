@@ -82,7 +82,7 @@ $utilities: (
     responsive: true,
     property: margin-left margin-right,
     class: mx,
-    values: $spacers
+    values: map-merge($spacers, (auto: auto))
   ),
   "margin-end": (
     responsive: true,

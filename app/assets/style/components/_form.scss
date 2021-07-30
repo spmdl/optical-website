@@ -31,6 +31,15 @@
   &__checkbox:checked + &__checkboxSpan {
     background: url(../images/check_box_black_24dp.svg) no-repeat left top;
   }
+  &__submit {
+    width: 350px;
+    @include media-breakpoint-up(lg) {
+      width: 200px;
+    }
+    @include media-breakpoint-up(md) {
+      width: 165px;
+    }
+  }
   ::placeholder {
     opacity: 0.2;
   }
