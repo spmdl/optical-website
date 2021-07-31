@@ -1,28 +1,28 @@
 .footer {
   &__navLink {
     padding: .6875rem 1.5rem;
+    position: relative;
+    margin-right: .25rem;
     @include media-breakpoint-up(lg) {
       padding: 0 1.25rem;
     }
   }
   &__nav li:first-child a {
-    padding-left: 0;
+    padding: .6875rem 1.5rem .6875rem .25rem;
   }
   @media(min-width: 992px) {
     &__navLink::after {
       content: "";
       border-bottom: 2px solid #fff;
-      position: relative;
+      position: absolute;
       display: block;
       transition: all .3s;
-      margin: auto; /*使線段從中間展開*/
-      // right: 0;
-      // bottom: 0;
-      width: 0%;
-      top: 3px;
+      right: 0;
+      bottom: 0;
+      width: 0;
     }
     &__navLink:hover::after {
-      // left: 0;
+      left: 0;
       width: 100%;
     }
   }
