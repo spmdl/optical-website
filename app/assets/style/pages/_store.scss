@@ -10,7 +10,7 @@
     padding-bottom: 2.5rem;
   }
   &__title {
-    @include font-set(3rem, 5rem, 700);
+    @include font-set(3rem, 1.5, 700);
     border-left: 8px solid $red-dark;
     padding-left: 1rem;
     margin-bottom: 3.75rem;
@@ -19,7 +19,7 @@
       margin-bottom: 2.5rem;
     }
     @include media-breakpoint-up(md) {
-      @include font-set(1.75rem, 2.625rem);
+      font-size: 1.75rem;
       margin-bottom: 1.5rem;
     }
   }
