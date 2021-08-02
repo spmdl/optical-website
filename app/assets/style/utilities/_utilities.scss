@@ -13,6 +13,9 @@
     $property-class: if($property-class, $property-class, nth($properties, 1));
     $property-class-modifier: if($key, if($property-class == "" and $infix == "", "", "-") + $key, "");
     @if $value != null {
+      @if $property-class == "-mb" {
+        $value: (-$value);
+      }
       .#{$property-class + $infix + $property-class-modifier} {
         @each $property in $properties {
           #{$property}: $value ;

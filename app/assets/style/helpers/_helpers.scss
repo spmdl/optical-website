@@ -1,0 +1,28 @@
+.pink-hover:hover {
+  @media(min-width: 768px) {
+    background: $pink;
+    color: $red;
+  }
+}
+.translucent-hover:hover {
+  opacity: 0.5;
+}
+.image-replace-text {
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.title {
+  @include font-set(3rem, $font-weight: 700);
+    border-left: 8px solid $red-dark;
+    padding-left: 1rem;
+    margin-bottom: 3.75rem;
+  @include media-breakpoint-up(lg) {
+    border-width: 4px;
+    margin-bottom: 2.5rem;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+}

@@ -19,9 +19,6 @@
     display: block; 
     width: 80px;
     height: 48px;
-    text-indent: 101%;
-    overflow: hidden;
-    white-space: nowrap;
     @include media-breakpoint-up(md) {
       width: 48px;
       height: 29px;

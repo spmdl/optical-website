@@ -108,6 +108,12 @@ $utilities: (
     class: mb,
     values: map-merge($spacers, (auto: auto))
   ),
+  "negative-margin-bottom": (
+    responsive: true,
+    property: margin-bottom,
+    class: -mb,
+    values: $spacers
+  ),
   // Padding utilities
   "padding": (
     responsive: true,
