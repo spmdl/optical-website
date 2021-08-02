@@ -1,6 +1,6 @@
 .footer {
   &__navLink {
-    padding: .6875rem 1.5rem;
+    padding: .75rem 1.5rem;
     position: relative;
     margin-right: .25rem;
     @include media-breakpoint-up(lg) {
@@ -8,7 +8,7 @@
     }
   }
   &__nav li:first-child a {
-    padding: .6875rem 1.5rem .6875rem .25rem;
+    padding: .75rem 1.5rem .75rem .25rem;
   }
   @media(min-width: 992px) {
     &__navLink::after {

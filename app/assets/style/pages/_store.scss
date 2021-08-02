@@ -4,13 +4,10 @@
   @include media-breakpoint-up(lg) {
     padding-top: 3.75rem;
     padding-bottom: 4.75rem;
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
   }
   @include media-breakpoint-up(md) {
     padding-top: 1.75rem;
     padding-bottom: 2.5rem;
-    margin: 0;
   }
   &__title {
     @include font-set(3rem, 5rem, 700);
