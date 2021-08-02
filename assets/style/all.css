@@ -4991,7 +4991,8 @@ body {
     @media (max-width: 992px) {
       .crossoverProduct__subTitle {
         font-size: 2rem;
-        line-height: 1.5625rem; } }
+        line-height: 1.5625rem;
+        font-weight: medium; } }
 
 .location {
   padding-top: 6rem;
@@ -5006,7 +5007,7 @@ body {
       padding-bottom: 2.5rem; } }
   .location__title {
     font-size: 3rem;
-    line-height: 5rem;
+    line-height: 1.5;
     font-weight: 700;
     border-left: 8px solid #9F1213;
     padding-left: 1rem;
@@ -5018,7 +5019,6 @@ body {
     @media (max-width: 767px) {
       .location__title {
         font-size: 1.75rem;
-        line-height: 2.625rem;
         margin-bottom: 1.5rem; } }
   .location__select {
     display: block;
@@ -5094,7 +5094,7 @@ body {
       padding-bottom: 2.25rem; } }
   .faq__title {
     font-size: 3rem;
-    line-height: 5rem;
+    line-height: 1.5;
     font-weight: 700;
     border-left: 8px solid #9F1213;
     padding-left: 1rem;
@@ -5106,7 +5106,6 @@ body {
     @media (max-width: 767px) {
       .faq__title {
         font-size: 1.75rem;
-        line-height: 2.625rem;
         margin-bottom: 1.5rem; } }
 
 /*# sourceMappingURL=all.css.map */
