@@ -1049,33 +1049,19 @@ table {
   .gy-sm-11 {
     --bs-gutter-y: 5rem; } }
 
-.card__item {
+.card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  height: 100%; }
 
-@media (min-width: 992px) {
-  .card__item {
-    -webkit-transition: 0.3s, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
-    transition: 0.3s, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
-    -o-transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s;
-    transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s;
-    transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12); }
-  .card__item:hover {
-    -webkit-transform: scale(1.01);
-        -ms-transform: scale(1.01);
-            transform: scale(1.01);
-    -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-    -o-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-    -webkit-box-shadow: 0 40px 60px -20px rgba(12, 5, 62, 0.15);
-            box-shadow: 0 40px 60px -20px rgba(12, 5, 62, 0.15); } }
-
-.card__body {
+.card-body {
+  cursor: default;
+  padding: 1rem 1.5rem;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -1086,21 +1072,22 @@ table {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 1rem;
   border: 1px solid #DEE2E6;
-  border-width: 0 1px 1px 1px;
-  border-radius: 0 0 .25rem .25rem;
-  -webkit-box-shadow: 0px 2px 6px #00000029;
-          box-shadow: 0px 2px 6px #00000029;
-  color: #212529; }
+  padding: 1rem; }
 
-.card__img {
-  max-width: 100%;
-  height: auto;
-  border-radius: .25rem .25rem 0 0;
+.card-header {
+  font-size: 1.5rem;
+  border: 1px solid #DEE2E6;
+  border-width: 1px 1px 0 1px;
+  padding: 0.75rem 1.5rem; }
+  @media (max-width: 992px) {
+    .card-header {
+      font-size: 1rem;
+      line-height: 1.5;
+      font-weight: 700;
+      padding: .5rem 1.5rem; } }
+
+.card-img {
   -o-object-fit: cover;
      object-fit: cover; }
 
@@ -1190,7 +1177,7 @@ textarea.form-control {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  border: 0.1rem solid #ced4da;
+  border: 0.1rem solid #DEE2E6;
   color: #495057;
   font-size: 1rem;
   padding: .75rem 1rem .875rem 1rem; }
@@ -1296,14 +1283,6 @@ textarea.form-control {
     border-color: #AA0601;
     background-color: #AA0601; }
 
-@media (min-width: 768px) {
-  .pink-hover:hover {
-    background: #FBF2F2;
-    color: #AA0601; } }
-
-.translucent-hover:hover {
-  opacity: 0.5; }
-
 .image-replace-text {
   text-indent: 101%;
   overflow: hidden;
@@ -1324,6 +1303,44 @@ textarea.form-control {
     .title {
       font-size: 1.75rem;
       margin-bottom: 1.5rem; } }
+
+@media (min-width: 768px) {
+  .pink-hover:hover {
+    background: #FBF2F2;
+    color: #AA0601; } }
+
+.translucent-hover:hover {
+  opacity: 0.5; }
+
+@media (min-width: 992px) {
+  .image-zoom-hover {
+    -webkit-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out; }
+    .image-zoom-hover:hover {
+      -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+      -o-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+      -webkit-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+              transform: scale(1.2); } }
+
+@media (min-width: 992px) {
+  .card-zoom-hover {
+    -webkit-transition: 0.3s, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+    transition: 0.3s, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+    -o-transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s;
+    transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s;
+    transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12); }
+    .card-zoom-hover:hover {
+      -webkit-transform: scale(1.01);
+          -ms-transform: scale(1.01);
+              transform: scale(1.01);
+      -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+      -o-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+      -webkit-box-shadow: 0 40px 60px -20px rgba(12, 5, 62, 0.15);
+              box-shadow: 0 40px 60px -20px rgba(12, 5, 62, 0.15); } }
 
 .overflow-auto {
   overflow: auto; }
@@ -1370,6 +1387,18 @@ textarea.form-control {
 
 .d-none {
   display: none; }
+
+.shadow {
+  -webkit-box-shadow: 0 2px 6px #00000029;
+          box-shadow: 0 2px 6px #00000029; }
+
+.shadow-lg {
+  -webkit-box-shadow: 0 40px 60px -20px rgba(12, 5, 62, 0.15);
+          box-shadow: 0 40px 60px -20px rgba(12, 5, 62, 0.15); }
+
+.shadow-none {
+  -webkit-box-shadow: none;
+          box-shadow: none; }
 
 .position-static {
   position: static; }
@@ -2480,6 +2509,14 @@ textarea.form-control {
 
 .mw-100 {
   max-width: 100%; }
+
+.rounded-top {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem; }
+
+.rounded-bottom {
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem; }
 
 @media (max-width: 1200px) {
   .d-xl-inline {
@@ -5650,39 +5687,5 @@ body {
         line-height: 1.5625rem;
         font-weight: 400;
         font-weight: medium; } }
-
-.locationCard__img {
-  -o-object-fit: cover;
-     object-fit: cover; }
-
-@media (min-width: 992px) {
-  .locationCard__img {
-    -webkit-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    transition: all 1s ease-out; }
-  .locationCard__img:hover {
-    -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-    -o-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-    -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-            transform: scale(1.2); } }
-
-.locationCard__title {
-  font-size: 1.5rem;
-  border: 1px solid #ced4da;
-  margin-bottom: -1px;
-  padding: 0.75rem 1.5rem; }
-  @media (max-width: 992px) {
-    .locationCard__title {
-      font-size: 1rem;
-      line-height: 1.5;
-      font-weight: 700;
-      padding: .5rem 1.5rem; } }
-
-.locationCard__body {
-  cursor: default;
-  padding: 1rem 1.5rem;
-  border: 1px solid #ced4da; }
 
 /*# sourceMappingURL=all.css.map */
