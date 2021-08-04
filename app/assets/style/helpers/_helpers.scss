@@ -1,12 +1,3 @@
-.pink-hover:hover {
-  @media(min-width: 768px) {
-    background: $pink;
-    color: $red;
-  }
-}
-.translucent-hover:hover {
-  opacity: 0.5;
-}
 .image-replace-text {
   text-indent: 101%;
   overflow: hidden;
@@ -24,5 +15,35 @@
   @include media-breakpoint-up(md) {
     font-size: 1.75rem;
     margin-bottom: 1.5rem;
+  }
+}
+
+// hover effect
+.pink-hover:hover {
+  @media(min-width: 768px) {
+    background: $pink;
+    color: $red;
+  }
+}
+.translucent-hover:hover {
+  opacity: 0.5;
+}
+.image-zoom-hover {
+  @media(min-width: 992px) {
+    transition: all 1s ease-out;
+    &:hover {
+      transition: all 0.5s cubic-bezier(.165, .84, .44, 1);
+      transform: scale(1.2);
+    }
+  }
+}
+.card-zoom-hover {
+  @media(min-width: 992px) {
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s;
+    &:hover {
+      transform: scale(1.01);
+      transition: all 0.5s cubic-bezier(.165, .84, .44, 1);
+      box-shadow: $box-shadow-lg;
+    }
   }
 }

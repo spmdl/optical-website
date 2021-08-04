@@ -10,6 +10,15 @@ $utilities: (
     class: d,
     values: inline inline-block block grid table table-row table-cell flex inline-flex none
   ),
+  "shadow": (
+    property: box-shadow,
+    class: shadow,
+    values: (
+      null: $box-shadow,
+      lg: $box-shadow-lg,
+      none: none,
+    )
+  ),
   "position": (
     property: position,
     values: static relative absolute fixed sticky
@@ -247,5 +256,15 @@ $utilities: (
     property: max-width,
     class: mw,
     values: (100: 100%)
+  ),
+  "rounded-top": (
+    property: border-top-left-radius border-top-right-radius,
+    class: rounded-top,
+    values: (null: $border-radius)
+  ),
+  "rounded-bottom": (
+    property: border-bottom-right-radius border-bottom-left-radius,
+    class: rounded-bottom,
+    values: (null: $border-radius)
   ),
 );
