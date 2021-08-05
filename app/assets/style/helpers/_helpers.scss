@@ -47,3 +47,21 @@
     }
   }
 }
+.line-bottom-hover {
+  @media(min-width: 992px) {
+    &::after {
+      content: "";
+      border-bottom: 2px solid #fff;
+      position: absolute;
+      display: block;
+      transition: all .3s;
+      right: 0;
+      bottom: 0;
+      width: 0;
+    }
+    &:hover::after {
+      left: 0;
+      width: 100%;
+    }
+  }
+}

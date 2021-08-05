@@ -245,10 +245,18 @@ $utilities: (
       $colors,
     )
   ),
+  "border": (
+    responsive: true,
+    property: border,
+    values: (
+      null: 1px solid $white,
+      0: 0,
+    )
+  ),
   "border-bottom": (
     property: border-bottom,
     values: (
-      null: 1px solid $gray-light,
+      null: 1px solid $white,
       0: 0,
     )
   ),
@@ -309,5 +317,10 @@ $utilities: (
     property: border-bottom-right-radius border-bottom-left-radius,
     class: rounded-bottom,
     values: (null: $border-radius)
+  ),
+  "cursor": (
+    property: cursor,
+    class: cursor,
+    values: $cursor-type
   ),
 );

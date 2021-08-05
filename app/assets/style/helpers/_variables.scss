@@ -34,6 +34,7 @@ $spacers: (
   "0":   0,
   "xs":  .25rem,   // 4
   "s":   .75rem,   // 12
+  "xm":  1.75rem,  // 28
   "m":   2.25rem,  // 36
   "l":   4.5rem,   // 72
   "xl":  6rem,     // 96
@@ -149,3 +150,8 @@ $btn-padding-y-lg:      .5rem;
 $btn-padding-x-lg:      1rem;
 $btn-font-size-lg:      1.25rem;
 $btn-border-radius-lg:  .3rem;
+
+// cursor
+$cursor-type: (
+  "pointer": pointer,
+); 
