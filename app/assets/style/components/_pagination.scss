@@ -1,0 +1,27 @@
+.pagination {
+  display: flex;
+  padding-left: 0;
+  li + li{
+    border-left: none;
+  }
+}
+.page-item {
+  border: 1px solid $gray-dark;
+  transition: .5s;
+  &.active .page-link{
+    background-color: $black;
+    color: $white;
+  }
+}
+.page-link {
+  padding: .625rem .75rem;
+  color: $gray-dark;
+  &:hover {
+    background-color: $black;
+    color: $white;
+  }
+  &.previous:hover, &.next:hover {
+    background-color: $gray-light;
+    color: $black;
+  }
+}
