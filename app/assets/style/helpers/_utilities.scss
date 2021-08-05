@@ -117,6 +117,12 @@ $utilities: (
     class: mb,
     values: map-merge($spacers, (auto: auto))
   ),
+  "negative-margin-top": (
+    responsive: true,
+    property: margin-top,
+    class: -mt,
+    values: $spacers
+  ),
   "negative-margin-bottom": (
     responsive: true,
     property: margin-bottom,
@@ -225,9 +231,9 @@ $utilities: (
         $theme-colors,
         $colors,
       ),(    
-        // "body": $body-color,
         "muted": $gray,
-        // "reset": inherit,
+        "gray-dark": $gray-dark,
+        "reset": inherit,
       )
     )
   ),
@@ -238,6 +244,44 @@ $utilities: (
     values: map-merge(
       $theme-colors,
       $colors,
+    )
+  ),
+  "border-bottom": (
+    property: border-bottom,
+    values: (
+      null: 1px solid $gray-light,
+      0: 0,
+    )
+  ),
+  "border-color": (
+    property: border-color,
+    class: border,
+    values: map-merge($theme-colors, ("white": $white))
+  ),
+  "border-width": (
+    property: border-width,
+    class: border,
+    values: $border-widths
+  ),
+  "max-height": (
+    responsive: true,
+    property: max-height,
+    class: mh,
+    values: (
+      s: 230px,
+      100: 100%
+    )
+  ),
+  "height": (
+    responsive: true,
+    property: height,
+    class: h,
+    values: (
+      25: 25%,
+      50: 50%,
+      75: 75%,
+      100: 100%,
+      auto: auto
     )
   ),
   "width": (
