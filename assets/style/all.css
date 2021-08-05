@@ -55,6 +55,7 @@ table {
   --bs-white: #ffffff;
   --bs-black: #000000;
   --bs-gray: #707070;
+  --bs-gray-dark: #555555;
   --bs-primary: #AA0601;
   --bs-font-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -1280,6 +1281,33 @@ textarea.form-control {
     color: #FBF2F2;
     border-color: #AA0601;
     background-color: #AA0601; }
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0; }
+  .pagination li + li {
+    border-left: none; }
+
+.page-item {
+  border: 1px solid #555555;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+  .page-item.active .page-link {
+    background-color: #000000;
+    color: #ffffff; }
+
+.page-link {
+  padding: .625rem .75rem;
+  color: #555555; }
+  .page-link:hover {
+    background-color: #000000;
+    color: #ffffff; }
+  .page-link.previous:hover, .page-link.next:hover {
+    background-color: #DEE2E6;
+    color: #000000; }
 
 .image-replace-text {
   text-indent: 101%;
@@ -2517,11 +2545,11 @@ textarea.form-control {
 .text-gray {
   color: #707070; }
 
-.text-muted {
-  color: #707070; }
-
 .text-gray-dark {
   color: #555555; }
+
+.text-muted {
+  color: #707070; }
 
 .text-reset {
   color: inherit; }
@@ -2549,6 +2577,9 @@ textarea.form-control {
 
 .bg-gray {
   background-color: #707070; }
+
+.bg-gray-dark {
+  background-color: #555555; }
 
 .border-bottom {
   border-bottom: 1px solid #DEE2E6; }
