@@ -1,0 +1,67 @@
+---
+title: Optical 門市資訊
+layout: ./app/layout.ejs
+engine: ejs
+current: store-info
+---
+<main class="container pt-xl pt-lg-10 pt-md-m pb-xxxl pb-lg-xl pb-md-9">
+  <h2 class="title">門市據點</h2>
+  <div class="row">
+    <div class="col-5 col-lg-6 col-md-12 d-flex align-items-center mb-6 mb-lg-4 mb-md-3">
+      <label for="region" class="fs-3 fs-lg-1 fs-md-s text-nowrap me-3 me-md-s">選擇地區</label>
+      <select id="region" class="form-select form-select-sm">
+        <option value="大同鄉">大同鄉</option>
+        <option value="神岡區">神岡區</option>
+        <option value="來義鄉">來義鄉</option>
+        <option value="六腳鄉">六腳鄉</option>
+        <option value="角板鄉">角板鄉</option>
+      </select>
+    </div>
+  </div>
+  <ul class="row">
+    <li class="col-5 col-lg-12 card mb-lg-6 mb-md-2">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-6 col-md-12">
+          <div class="overflow-hidden">
+            <img src="assets/images/locate1.jpg" alt="location img" class="card-img h-xl h-lg-l">
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 col-md-12">
+          <h3 class="card-header border-bottom-0 fs-3 fs-lg-1 fw-lg-bold py-s px-4 py-lg-1 px-lg-4">宜蘭縣大同鄉</h3>
+          <ul class="card-body">
+            <li class="d-flex align-items-start align-items-lg-center mb-1">
+              <span class="material-icons material-icons-outlined fs-3 fs-lg-2 me-1">
+                phone
+              </span>
+              <a href="tel:(02)000-1234" class="text-dark fs-2 fs-lg-s">
+                電話：(03)980-1965
+              </a>
+            </li>
+            <li class="d-flex align-items-start align-items-lg-center mb-1">
+              <span class="material-icons material-icons-outlined fs-3 fs-lg-2 me-1">
+                schedule
+              </span>
+              <p href="#" class="text-dark fs-2 fs-lg-s">
+                營業時間：06:00-22:00
+              </p>
+            </li>
+            <li class="d-flex align-items-start align-items-lg-center">
+              <span class="material-icons material-icons-outlined fs-3 fs-lg-2 me-1">
+                place
+              </span>
+              <p href="#" class="text-dark fs-2 fs-lg-s">
+                地址：宜蘭縣大同鄉泰雅路一段34號
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li class="col-7 col-lg-12">
+      <div class="googleMap position-relative">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14501.924971022616!2d121.61316583024086!3d24.67597836204085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34680b817e8da135%3A0x48f3da7ebe24096!2zNy1FTEVWRU4g5rOw5Yud6ZaA5biC!5e0!3m2!1szh-TW!2stw!4v1628250160275!5m2!1szh-TW!2stw" width="635" height="422" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </li>
+  </ul>
+</main>

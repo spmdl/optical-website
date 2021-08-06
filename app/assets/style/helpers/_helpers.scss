@@ -91,3 +91,17 @@
     border-left: none;
   }
 }
+//google map
+.googleMap {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 66.48%;
+  iframe{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}
