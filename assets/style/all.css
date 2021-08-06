@@ -1475,6 +1475,18 @@ textarea.form-control {
 .remove-middle-line li + li {
   border-left: none; }
 
+.googleMap {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 66.48%; }
+  .googleMap iframe {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0; }
+
 .overflow-auto {
   overflow: auto; }
 
@@ -2890,7 +2902,7 @@ textarea.form-control {
   height: 196px; }
 
 .h-xl {
-  height: 230px; }
+  height: 224px; }
 
 .w-25 {
   width: 25%; }
@@ -3803,7 +3815,7 @@ textarea.form-control {
   .h-xl-l {
     height: 196px; }
   .h-xl-xl {
-    height: 230px; }
+    height: 224px; }
   .w-xl-25 {
     width: 25%; }
   .w-xl-50 {
@@ -4682,7 +4694,7 @@ textarea.form-control {
   .h-lg-l {
     height: 196px; }
   .h-lg-xl {
-    height: 230px; }
+    height: 224px; }
   .w-lg-25 {
     width: 25%; }
   .w-lg-50 {
@@ -5561,7 +5573,7 @@ textarea.form-control {
   .h-md-l {
     height: 196px; }
   .h-md-xl {
-    height: 230px; }
+    height: 224px; }
   .w-md-25 {
     width: 25%; }
   .w-md-50 {
@@ -6440,7 +6452,7 @@ textarea.form-control {
   .h-sm-l {
     height: 196px; }
   .h-sm-xl {
-    height: 230px; }
+    height: 224px; }
   .w-sm-25 {
     width: 25%; }
   .w-sm-50 {
