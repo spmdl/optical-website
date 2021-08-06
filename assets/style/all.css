@@ -1375,6 +1375,28 @@ textarea.form-control {
     background-color: #DEE2E6;
     color: #000000; }
 
+.breadcrumb {
+  padding-top: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.breadcrumb-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .breadcrumb-item + .breadcrumb-item {
+    padding-left: 0.5rem; }
+    .breadcrumb-item + .breadcrumb-item::before {
+      display: inline-block;
+      color: #000000;
+      content: "/";
+      padding-right: .5rem; }
+  .breadcrumb-item.active a {
+    color: #AA0601; }
+
 .image-replace-text {
   text-indent: 101%;
   overflow: hidden;
@@ -2673,6 +2695,9 @@ textarea.form-control {
 .fs-m {
   font-size: 1.1875rem; }
 
+.fs-ml {
+  font-size: 1.75rem; }
+
 .fs-l {
   font-size: 2.75rem; }
 
@@ -2849,6 +2874,9 @@ textarea.form-control {
 
 .border-gray-light {
   border-color: #DCDCDC; }
+
+.border-gray {
+  border-color: #707070; }
 
 .border-0 {
   border-width: 0; }
@@ -3752,6 +3780,8 @@ textarea.form-control {
     font-size: 0.875rem; }
   .fs-xl-m {
     font-size: 1.1875rem; }
+  .fs-xl-ml {
+    font-size: 1.75rem; }
   .fs-xl-l {
     font-size: 2.75rem; }
   .fs-xl-xl {
@@ -4631,6 +4661,8 @@ textarea.form-control {
     font-size: 0.875rem; }
   .fs-lg-m {
     font-size: 1.1875rem; }
+  .fs-lg-ml {
+    font-size: 1.75rem; }
   .fs-lg-l {
     font-size: 2.75rem; }
   .fs-lg-xl {
@@ -5510,6 +5542,8 @@ textarea.form-control {
     font-size: 0.875rem; }
   .fs-md-m {
     font-size: 1.1875rem; }
+  .fs-md-ml {
+    font-size: 1.75rem; }
   .fs-md-l {
     font-size: 2.75rem; }
   .fs-md-xl {
@@ -6389,6 +6423,8 @@ textarea.form-control {
     font-size: 0.875rem; }
   .fs-sm-m {
     font-size: 1.1875rem; }
+  .fs-sm-ml {
+    font-size: 1.75rem; }
   .fs-sm-l {
     font-size: 2.75rem; }
   .fs-sm-xl {
