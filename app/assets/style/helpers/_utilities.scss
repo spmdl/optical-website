@@ -271,6 +271,7 @@ $utilities: (
     values: map-merge($theme-colors, (
       "white": $white,
       "gray-light": $border-color,
+      "gray": $gray,
     ))
   ),
   "border-width": (
