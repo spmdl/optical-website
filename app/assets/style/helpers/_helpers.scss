@@ -47,7 +47,27 @@
     }
   }
 }
-.line-bottom-hover {
+.underline-center-hover {
+  position: relative;
+  @media(min-width: 992px) {
+    &::after {
+      content: "";
+      border-bottom: 2px solid #fff;
+      position: absolute;
+      display: block;
+      transition: all .5s;
+      height: .2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0%;
+    }
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}
+.underline-hover {
+  position: relative;
   @media(min-width: 992px) {
     &::after {
       content: "";
