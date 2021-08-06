@@ -215,6 +215,11 @@ $utilities: (
       center: center,
     )
   ),
+  "text-transform": (
+    property: text-transform,
+    class: text,
+    values: lowercase uppercase capitalize
+  ),
   "white-space": (
     property: white-space,
     class: text,
@@ -263,7 +268,10 @@ $utilities: (
   "border-color": (
     property: border-color,
     class: border,
-    values: map-merge($theme-colors, ("white": $white))
+    values: map-merge($theme-colors, (
+      "white": $white,
+      "gray-light": $border-color,
+    ))
   ),
   "border-width": (
     property: border-width,
@@ -288,7 +296,12 @@ $utilities: (
       50: 50%,
       75: 75%,
       100: 100%,
-      auto: auto
+      auto: auto,
+      xs: 16px,
+      s: 24px,
+      m: 164px,
+      l: 196px,
+      xl: 230px,
     )
   ),
   "width": (
@@ -300,13 +313,24 @@ $utilities: (
       50: 50%,
       75: 75%,
       100: 100%,
-      auto: auto
+      auto: auto,
+      xs: 16px,
+      s: 24px,
     )
   ),
   "max-width": (
     property: max-width,
     class: mw,
     values: (100: 100%)
+  ),
+  "rounded": (
+    property: border-radius,
+    class: rounded,
+    values: (
+      0: 0,
+      4: 4px,
+      circle: 50%,
+    )
   ),
   "rounded-top": (
     property: border-top-left-radius border-top-right-radius,
@@ -322,5 +346,10 @@ $utilities: (
     property: cursor,
     class: cursor,
     values: $cursor-type
+  ),
+  "object-fit": (
+    property: object-fit,
+    class: object-fit,
+    values: (cover: cover)
   ),
 );

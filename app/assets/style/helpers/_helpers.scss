@@ -85,3 +85,9 @@
     }
   }
 }
+//border
+.remove-middle-line {
+  li + li{
+    border-left: none;
+  }
+}

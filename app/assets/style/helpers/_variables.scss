@@ -5,7 +5,9 @@ $red:         #AA0601;
 $red-dark:    #9F1213;
 $black:       #000000;
 $dark:        #212529;
+$brown-light: #B75929;
 $brown:       #650300;
+$brown-dark:  #5F3E2D;
 $gray:        #707070;
 // $gray-light:  hsl(210, 14%, 83%);
 // $gray-100:    #F2F2F2;
@@ -21,12 +23,15 @@ $colors: (
   "black":      $black,
   "gray":       $gray,
   "gray-dark":  $gray-dark,
+  "brown-light":$brown-light,
+  "brown-dark":$brown-dark,
 );
 
 $primary:   $red;
 $secondary: $brown;
 $theme-colors: (
-  "primary":    $primary
+  "primary":    $primary,
+  "secondary":  $secondary,
 );
 
 // Spacing
@@ -38,7 +43,8 @@ $spacers: (
   "m":   2.25rem,  // 36
   "l":   4.5rem,   // 72
   "xl":  6rem,     // 96
-  "xxl": 10rem,    // 160
+  "xxl": 6.5rem,   // 104
+  "xxxl":10rem,    // 160
   "1":   .5rem,    // 8
   "2":   1rem,     // 16
   "3":   1.25rem,  // 20
@@ -95,6 +101,7 @@ $border-widths: (
   5: 5px
 );
 
+$border-color:              #DCDCDC;
 $border-radius:               .25rem;
 
 $box-shadow:                  0 2px 6px #00000029;
@@ -123,6 +130,7 @@ $line-heights: (
 $font-sizes: (
   "s":   .875rem,   // 14
   "m":   1.1875rem, // 19
+  "l":   2.75rem,   // 44
   "xl":  4rem,      // 64
   "xxl": 6.25rem,   // 100
   "1":   1rem,      // 16
